@@ -11,14 +11,14 @@
 # **************************************************************************** #
 
 NAME = gnl
-HEADER = get_next_line.h
+HEADER = get_next_line.c tests/gnl7_3.c
 LIBRARY = libft/libft.a
-SOURCE = get_next_line.c tests/gnl7_3.c
+SOURCE = get_next_line.h
 
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra $(HEADER) $(LIBRARY) $(SOURCE)
+	gcc -Wall -Werror -Wextra $(HEADER) $(LIBRARY)
 
 clean: 
 	rm -f *.o *.swp *~ *.gch
